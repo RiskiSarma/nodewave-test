@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans";
+
+/* NodeWave-style palette. Swap these tokens to match the official brand guide. */
+@theme {
+  --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0d2233;
+  --color-ink-soft: #4a5f70;
+  --color-paper: #f4f7f8;
+  --color-surface: #ffffff;
+  --color-line: #dbe4e8;
+
+  --color-wave-50: #e6f5f6;
+  --color-wave-100: #c5e8ea;
+  --color-wave-500: #12a3ad;
+  --color-wave-600: #0e858e;
+  --color-wave-700: #0b6a72;
+  --color-wave-900: #073f45;
+
+  --color-todo: #6b7c8a;
+  --color-progress: #2b6cd4;
+  --color-done: #1f9d63;
+  --color-blocked: #c0741a;
+  --color-danger: #c53b3b;
+}
+
+html, body { background: var(--color-paper); color: var(--color-ink); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-wave-500); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
